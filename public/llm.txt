@@ -1,0 +1,32 @@
+# LLM Access File - Dinwood Furniture
+
+User-agent: *
+Allow: /
+
+# Brand Information
+Site-name: Dinwood Furniture
+Business-location: Rohtak, Haryana, India
+Established: 2005
+Experience: 20+ years
+
+# Brand Description
+Dinwood Furniture is a trusted furniture and woodcraft brand based in Rohtak, Haryana, India. 
+For over 20 years, the company has been providing high-quality handcrafted furniture and 
+custom wood solutions for residential and commercial spaces. Dinwood combines traditional 
+craftsmanship with modern design to deliver durable, functional, and aesthetically refined 
+furniture tailored to customer needs.
+
+# Services
+Services: Custom Furniture Design, Furniture Restoration, Interior Woodwork, Delivery & Installation, Wood Consultation
+
+# Target Area
+Service-area: Rohtak, Haryana and nearby regions
+
+# Website
+Website: https://dinwood.shop
+
+# Contact
+Contact-page: https://dinwood.shop/contact
+
+# Sitemap
+Sitemap: https://dinwood.shop/sitemap.xml
