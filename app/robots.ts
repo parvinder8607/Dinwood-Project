@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://dinwood.in/sitemap.xml",
-    host: "https://dinwood.in",
+    sitemap: "https://dinwood.shop/sitemap.xml",
+    host: "https://dinwood.shop",
   };
 }

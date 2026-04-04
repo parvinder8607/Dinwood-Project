@@ -275,7 +275,7 @@ export default function HomePage() {
             <Link href="/contact" className="px-8 py-4 bg-honey text-bark text-[12px] font-mono tracking-widest uppercase hover:bg-straw transition-colors duration-300 flex items-center gap-2 rounded-sm shadow-lg">
               Book a Consultation <ArrowRight size={14}/>
             </Link>
-            <a href="https://wa.me/91XXXXXXXXXX?text=Hi%20Dinwood!" target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/919813352801?text=Hi%20Dinwood!" target="_blank" rel="noopener noreferrer"
               className="px-8 py-4 border border-parch/20 text-parch text-[12px] font-mono tracking-widest uppercase hover:border-honey/50 hover:text-honey transition-all duration-300 rounded-sm flex items-center gap-2">
               WhatsApp Us
             </a>

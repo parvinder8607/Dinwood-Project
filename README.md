@@ -74,7 +74,7 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ### 🔑 Replace Placeholders
 - [ ] `+91 XXXXX XXXXX` → your actual phone number (search all files)
-- [ ] `hello@dinwood.in` → your actual email
+- [ ] `info@dinwood.in` → your actual email
 - [ ] `Your Street Address, Rohtak` → your full showroom address
 - [ ] `YOUR_GOOGLE_VERIFICATION_CODE` in `layout.tsx` → from Google Search Console
 - [ ] Instagram handle in Footer.tsx
@@ -100,7 +100,7 @@ In `contact/page.tsx`, replace the map placeholder div with:
 
 ### 🔍 SEO Actions After Launch
 1. Submit to **Google Search Console** → https://search.google.com/search-console
-2. Submit sitemap: `https://dinwood.in/sitemap.xml`
+2. Submit sitemap: `https://dinwood.shop/sitemap.xml`
 3. Create **Google Business Profile** at https://business.google.com (critical for local Rohtak search)
 4. Add consistent NAP (Name, Address, Phone) across all platforms
 5. Register on **Justdial**, **Sulekha**, **IndiaMART** with same address

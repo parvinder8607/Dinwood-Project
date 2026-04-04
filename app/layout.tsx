@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://dinwood.in"),
+  metadataBase: new URL("https://dinwood.shop"),
   title: {
     default: "Dinwood | Premium Wooden Interiors & Custom Furniture in Rohtak, Haryana",
     template: "%s | Dinwood – Rohtak",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Dinwood | Premium Wooden Interiors in Rohtak, Haryana",
     description:
       "Bespoke wooden furniture, modular kitchens, wardrobes & interior woodwork crafted in Rohtak. Book a showroom visit.",
-    url: "https://dinwood.in",
+    url: "https://dinwood.shop",
     siteName: "Dinwood",
     locale: "en_IN",
     type: "website",
@@ -42,23 +42,23 @@ export const metadata: Metadata = {
       "Bespoke wood interiors crafted with traditional skill and love in Rohtak, Haryana.",
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: "https://dinwood.in" },
+  alternates: { canonical: "https://dinwood.shop" },
   verification: { google: "YOUR_GOOGLE_VERIFICATION_CODE" },
 };
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://dinwood.in",
+  "@id": "https://dinwood.shop",
   name: "Dinwood",
   description:
     "Premium wooden interiors, custom furniture, modular kitchens, wardrobes and interior woodwork in Rohtak, Haryana.",
-  url: "https://dinwood.in",
-  telephone: "+91-XXXXXXXXXX",
-  email: "hello@dinwood.in",
+  url: "https://dinwood.shop",
+  telephone: "+91-9813352801",
+  email: "info@dinwood.in",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Your Street Address",
+    streetAddress: "Saini Pura, rahad road",
     addressLocality: "Rohtak",
     addressRegion: "Haryana",
     postalCode: "124001",
@@ -81,10 +81,10 @@ const localBusinessSchema = {
   hasMap: "https://maps.google.com/?q=Dinwood+Rohtak",
   sameAs: [
     "https://www.instagram.com/dinwood",
-    "https://wa.me/91XXXXXXXXXX",
+    "https://wa.me/919813352801",
   ],
   servesCuisine: null,
-  image: "https://dinwood.in/og-image.jpg",
+  image: "https://dinwood.shop/og-image.jpg",
   areaServed: {
     "@type": "GeoCircle",
     geoMidpoint: { "@type": "GeoCoordinates", latitude: 28.8955, longitude: 76.6066 },
@@ -108,7 +108,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* WhatsApp floating button */}
         <a
-          href="https://wa.me/91XXXXXXXXXX?text=Hi%20Dinwood%2C%20I%27d%20like%20to%20book%20a%20consultation"
+          href="https://wa.me/919813352801?text=Hi%20Dinwood%2C%20I%27d%20like%20to%20book%20a%20consultation"
           target="_blank"
           rel="noopener noreferrer"
           className="wa-float"

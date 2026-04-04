@@ -15,27 +15,27 @@ const contactMethods = [
   {
     icon: <MessageCircle size={22} className="text-honey" />,
     title: "WhatsApp",
-    detail: "+91 XXXXX XXXXX",
+    detail: "+91 98133 52801",
     sub: "Fastest response — usually within an hour",
-    href: "https://wa.me/91XXXXXXXXXX?text=Hi%20Dinwood%2C%20I%27d%20like%20to%20book%20a%20consultation",
+    href: "https://wa.me/919813352801?text=Hi%20Dinwood%2C%20I%27d%20like%20to%20book%20a%20consultation",
     cta: "Chat Now",
     primary: true,
   },
   {
     icon: <Phone size={22} className="text-honey" />,
     title: "Phone Call",
-    detail: "+91 XXXXX XXXXX",
+    detail: "+91 98133 52801",
     sub: "Mon–Sat · 10 AM – 7 PM",
-    href: "tel:+91XXXXXXXXXX",
+    href: "tel:+919813352801",
     cta: "Call Us",
     primary: false,
   },
   {
     icon: <Mail size={22} className="text-honey" />,
     title: "Email",
-    detail: "hello@dinwood.in",
+    detail: "info@dinwood.in",
     sub: "We reply within 24 hours",
-    href: "mailto:hello@dinwood.in",
+    href: "mailto:info@dinwood.in",
     cta: "Send Email",
     primary: false,
   },
@@ -159,8 +159,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-mono text-[10px] tracking-widest uppercase text-bark/40 mb-1">Phone & WhatsApp</p>
-                  <a href="tel:+91XXXXXXXXXX" className="font-body text-bark/70 hover:text-honey transition-colors">
-                    +91 XXXXX XXXXX
+                  <a href="tel:+919813352801" className="font-body text-bark/70 hover:text-honey transition-colors">
+                    +91 98133 52801
                   </a>
                 </div>
               </div>
@@ -171,8 +171,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="font-mono text-[10px] tracking-widest uppercase text-bark/40 mb-1">Email</p>
-                  <a href="mailto:hello@dinwood.in" className="font-body text-bark/70 hover:text-honey transition-colors">
-                    hello@dinwood.in
+                  <a href="mailto:info@dinwood.in" className="font-body text-bark/70 hover:text-honey transition-colors">
+                    info@dinwood.in
                   </a>
                 </div>
               </div>

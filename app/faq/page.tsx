@@ -147,7 +147,7 @@ export default function FAQPage() {
             <Link href="/contact" className="px-8 py-4 bg-honey text-bark text-[12px] font-mono tracking-widest uppercase hover:bg-straw transition-colors rounded-sm flex items-center gap-2">
               Contact Us <ArrowRight size={14}/>
             </Link>
-            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/919813352801" target="_blank" rel="noopener noreferrer"
               className="px-8 py-4 border border-parch/25 text-parch text-[12px] font-mono tracking-widest uppercase hover:border-honey/50 hover:text-honey transition-all rounded-sm">
               WhatsApp Us
             </a>

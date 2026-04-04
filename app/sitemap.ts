@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://dinwood.in";
+  const baseUrl = "https://dinwood.shop";
 
   const routes = [
     { url: "/",                                   priority: 1.0,  changeFrequency: "monthly" as const },
