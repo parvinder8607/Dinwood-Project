@@ -2,9 +2,12 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://dinwood.shop";
+  
+  // Use a fixed date (or fetch from your DB) to prevent the "shifting date" error
+  const lastMod = new Date("2026-04-04"); 
 
   const routes = [
-    { url: "/",                                   priority: 1.0,  changeFrequency: "monthly" as const },
+    { url: "",                                    priority: 1.0,  changeFrequency: "monthly" as const },
     { url: "/about",                              priority: 0.8,  changeFrequency: "monthly" as const },
     { url: "/services",                           priority: 0.9,  changeFrequency: "monthly" as const },
     { url: "/services/custom-furniture",          priority: 0.85, changeFrequency: "monthly" as const },
@@ -23,7 +26,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return routes.map((route) => ({
     url: `${baseUrl}${route.url}`,
-    lastModified: new Date(),
+    // Removing millisecond precision helps with some parsers
+    lastModified: lastMod.toISOString().split('T')[0], 
     changeFrequency: route.changeFrequency,
     priority: route.priority,
   }));
