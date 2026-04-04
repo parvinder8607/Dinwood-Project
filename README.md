@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🪵 Dinwood — Next.js Website
+
+**Premium Wooden Interiors & Woodcraft | Rohtak, Haryana**
+
+---
+
+## Tech Stack
+
+| Tool | Purpose |
+|------|---------|
+| **Next.js 14** (App Router) | Framework |
+| **Tailwind CSS** | Styling |
+| **GSAP + ScrollTrigger** | Animations |
+| **TypeScript** | Type safety |
+| **Lucide React** | Icons |
+
+---
+
+## Project Structure
+
+```
+dinwood/
+├── app/
+│   ├── layout.tsx          # Root layout + LocalBusiness JSON-LD + WhatsApp float
+│   ├── page.tsx            # Homepage (Hero, Stats, Services, About, Process, Testimonials, CTA)
+│   ├── about/page.tsx      # About Dinwood
+│   ├── services/
+│   │   ├── page.tsx                  # Services listing
+│   │   ├── custom-furniture/page.tsx
+│   │   ├── modular-kitchens/page.tsx
+│   │   ├── wardrobes-storage/page.tsx
+│   │   ├── interior-woodwork/page.tsx
+│   │   └── office-furniture/page.tsx
+│   ├── gallery/page.tsx    # Portfolio gallery with filter
+│   ├── blog/
+│   │   ├── page.tsx
+│   │   ├── craft-of-custom-furniture/page.tsx
+│   │   ├── why-sheesham-wood/page.tsx
+│   │   └── transform-your-kitchen/page.tsx
+│   ├── faq/page.tsx        # FAQ with FAQPage JSON-LD schema
+│   ├── contact/page.tsx    # WhatsApp, Phone, Email, Map, Walk-in
+│   ├── sitemap.ts          # Auto-generated sitemap
+│   ├── robots.ts           # Crawler rules
+│   └── globals.css         # Design system, grain texture, animations
+├── components/
+│   ├── Navbar.tsx          # Sticky nav with services dropdown
+│   ├── Footer.tsx          # Rich footer with all links
+│   └── ServicePageTemplate.tsx  # Reusable service page layout
+```
+
+---
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Before Going Live — Checklist
 
-## Learn More
+### 🔑 Replace Placeholders
+- [ ] `+91 XXXXX XXXXX` → your actual phone number (search all files)
+- [ ] `hello@dinwood.in` → your actual email
+- [ ] `Your Street Address, Rohtak` → your full showroom address
+- [ ] `YOUR_GOOGLE_VERIFICATION_CODE` in `layout.tsx` → from Google Search Console
+- [ ] Instagram handle in Footer.tsx
+- [ ] WhatsApp links throughout (replace `91XXXXXXXXXX` with your number)
 
-To learn more about Next.js, take a look at the following resources:
+### 📸 Replace Image Placeholders
+All image placeholders are styled divs. Replace with:
+- Hero: Dramatic workshop/showroom photo
+- Services: One hero photo per service type
+- Gallery: Your actual project photos (12+ recommended)
+- Blog posts: Relevant cover photos
+- Add `/public/og-image.jpg` (1200×630px) for social sharing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🗺️ Google Maps Embed
+In `contact/page.tsx`, replace the map placeholder div with:
+```html
+<iframe
+  src="https://maps.google.com/maps?q=YOUR+FULL+ADDRESS&output=embed"
+  width="100%" height="100%" style={{border:0}} loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🔍 SEO Actions After Launch
+1. Submit to **Google Search Console** → https://search.google.com/search-console
+2. Submit sitemap: `https://dinwood.in/sitemap.xml`
+3. Create **Google Business Profile** at https://business.google.com (critical for local Rohtak search)
+4. Add consistent NAP (Name, Address, Phone) across all platforms
+5. Register on **Justdial**, **Sulekha**, **IndiaMART** with same address
+6. Get customer reviews on Google Business Profile
 
-## Deploy on Vercel
+### 🚀 Recommended Deployment
+- **Vercel** (easiest for Next.js): https://vercel.com
+- Connect GitHub repo → auto-deploys on every push
+- Add custom domain `dinwood.in`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Design System
+
+| Token | Value | Usage |
+|-------|-------|-------|
+| `forest` | `#1c2b1a` | Deepest dark |
+| `bark` | `#3b2a1a` | Primary text |
+| `soil` | `#5c3d1e` | Dark sections |
+| `wood` | `#8b5e3c` | Mid-tone |
+| `honey` | `#c9893a` | **Primary accent** |
+| `straw` | `#e2c27d` | Borders |
+| `parch` | `#f5e6c8` | Card backgrounds |
+| `linen` | `#faf3e4` | **Page background** |
+
+**Fonts:** Playfair Display (display) · Lora (body) · JetBrains Mono (labels)
