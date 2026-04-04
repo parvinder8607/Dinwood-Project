@@ -82,7 +82,7 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li className="flex items-start gap-3 text-sm font-body text-parch/55">
                 <MapPin size={14} className="text-honey mt-0.5 shrink-0" />
-                <span>Your Address, Rohtak,<br />Haryana — 124001</span>
+                <span>Sainipura, rahad road, Rohtak,<br />Haryana — 124001</span>
               </li>
               <li className="flex items-center gap-3 text-sm font-body text-parch/55">
                 <Phone size={14} className="text-honey shrink-0" />
